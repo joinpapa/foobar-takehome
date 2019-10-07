@@ -1,24 +1,43 @@
 # Papa
 
-## Fullstack Engineer Takehome Assignment
+The frontend for this take home assignment **must be written in React**.
 
-To start your Phoenix server:
+The backend for this take home assignment **must be written in either Rails or Phoenix**.
 
-- Install dependencies with `mix deps.get`
-- Install Node.js dependencies with `cd assets && npm install`
-- Start Phoenix endpoint with `mix phx.server`
+Use this repo as a base if you want, you can also create a from scratch repo.
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+## Fullstack Engineer Takehome Assignment (Suggested: 1 hour)
 
-## The assignment:
+This is the take home assignment for full stack engineer candidates at Papa.
 
-Welcome to the takehome assignment for fullstack engineers at Papa. We hope you have fun doing this assignment!
+We need you to complete the following assignment:
 
-**Suggested Time: 1 hour**
+Render three buttons in the DOM, with texts: `foo`, `bar`, and `foobar`.
 
-**Skills tested: React knowledge, and backend knowledge (any language)**
+Based on the button clicked, hit the `/api/foobar` endpoint with the params:
 
----
+1. `foo`
+2. `bar`
+3. `foo` and `bar`
+
+Add a new backend endpoint `/api/foobar` with the following signature `GET /api/foobar`,
+it will take two query parameters:
+
+1. `foo`
+2. `bar`
+
+If `foo` is passed and true, implement and call the backend function `fooFunction()` that will just
+return the string `foo`.
+
+If `bar` is passed and true, implement and call the backend function `barFunction()` that will just
+return the string `bar`.
+
+If `foo` and `bar` is passed and both are true, implement and call the backend function
+`fooBarFunction()` that will just return the string `foobar`.
+
+Render this response in the area below the buttons.
+
+## How we grade the take-home assignment:
 
 Here's what we **do care** about in this assignment:
 
@@ -35,16 +54,12 @@ Here's what we **don't care** about in this assignment:
 
 ---
 
-**Your task:**
+If you decide to use this project template, here's some pointers:
 
-Add 3 buttons here in the UI. One for foo, one for bar, and one for foobar to the react client. Then hit the appropriate endpoint on click with the correct parameters.
+To start your Phoenix server:
 
-Render the output in the box below
+- Install dependencies with `mix deps.get`
+- Install Node.js dependencies with `cd assets && npm install`
+- Start Phoenix endpoint with `mix phx.server`
 
----
-
-Add a new backend endpoint with the following signature GET /api/fizzbuzz, it will take two query parameters foo and bar.
-
-- If foo is passed and true, implement and call fooFunction()
-- Else if bar is passed and true call barFunction().
-- If both are passed and true call fooBarFunction()
+Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
