@@ -14,7 +14,7 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Welcome to the takehome assignment for fullstack engineers at Papa. We hope you have fun doing this assignment!
 
-**Time Limit: 1 hour**
+**Suggested Time: 1 hour**
 
 **Skills tested: React knowledge, and backend knowledge (any language)**
 
